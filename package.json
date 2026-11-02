@@ -1,0 +1,45 @@
+{
+  "name": "ftml-syntax-highlighter",
+  "displayName": "FTML Syntax Highlighter",
+  "description": "Syntax highlighting for FTML and Wikidot source files.",
+  "version": "0.1.0",
+  "publisher": "perseonn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perseonn/vscode-ftml-highlighter.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ftml",
+        "aliases": [
+          "FTML",
+          "Wikidot",
+          "Wikidot Code"
+        ],
+        "extensions": [
+          ".ftml",
+          ".wd",
+          ".wikidot",
+          ".wj",
+          ".wikijump"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ftml",
+        "scopeName": "text.ftml",
+        "path": "./syntaxes/ftml.tmLanguage.json"
+      }
+    ]
+  }
+}
